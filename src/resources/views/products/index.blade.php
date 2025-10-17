@@ -34,6 +34,8 @@
               @forelse ($products as $product)
                   <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
                       <img src="{{ $product->image_path }}" alt="{{ $product->name }}" class="w-full h-48 object-cover">
+
+
                       <div class="p-4">
                           <h3 class="font-bold text-lg truncate">{{ $product->name }}</h3>
                           <p class="text-gray-600 text-sm mb-2 truncate">{{ $product->description }}</p>
@@ -61,3 +63,4 @@
       </div>
   </div>
 </x-app-layout>
+
