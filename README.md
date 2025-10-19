@@ -34,15 +34,23 @@ LaravelとAWSを使用して構築した、シンプルなECサイト風のWeb�
 
 ## 🖥️ System Overview / システム構成
 
-Mac (Local Development)
-↓ Push
-GitHub Repository
-↓ Trigger
-GitHub Actions (CI/CD Workflow)
-↓ Deploy via SSH
-AWS EC2 (Nginx + PHP + MySQL)
-↓
-AWS S3 (Image Storage)
+Mac (Local Development)  
+  
+↓ Push  
+  
+GitHub Repository  
+  
+↓ Trigger  
+   
+GitHub Actions (CI/CD Workflow) 
+  
+↓ Deploy via SSH  
+  
+AWS EC2 (Nginx + PHP + MySQL)  
+  
+↓  
+  
+AWS S3 (Image Storage)  
 
 ---
 
@@ -53,14 +61,6 @@ AWS S3 (Image Storage)
 - AWS S3とのストレージ連携（画像アップロード）  
 - GitHub Actionsを用いた自動デプロイパイプライン構築  
 - Tailwind CSSによるシンプルなUI設計  
-
----
-
-## ✨ Author
-
-**Shinpei Suzuki (鈴木 清平)**  
-📧 Contact: [your-email@example.com]  
-🔗 GitHub: [https://github.com/your-github-username](https://github.com/your-github-username)
 
 ---
 
