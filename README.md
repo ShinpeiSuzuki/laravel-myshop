@@ -1,4 +1,3 @@
-# test deploy #午後
 # 🛍️ Laravel MyShop
 
 A simple e-commerce style web application built with **Laravel** and **AWS**.  
