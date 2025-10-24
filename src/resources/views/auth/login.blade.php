@@ -52,5 +52,11 @@
                 </x-button>
             </div>
         </form>
+	<div class="mt-4 text-center">
+	    <a href="{{ route('register') }}" class="text-indigo-600 hover:underline">
+	        新規ユーザー登録はこちら
+	    </a>
+	</div>
+
     </x-auth-card>
 </x-guest-layout>

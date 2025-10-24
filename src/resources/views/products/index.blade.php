@@ -18,16 +18,29 @@
 
   <div class="py-12">
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+		<!-- 検索フォーム -->
+	<form method="GET" action="{{ route('products.index') }}" 
+	      class="mb-6 flex items-center gap-2">
 
-          <!-- 検索フォーム -->
-          <form method="GET" action="{{ route('products.index') }}" class="mb-6 flex">
-              <input type="text" name="keyword" value="{{ request('keyword') }}"
-                  placeholder="商品名で検索..."
-                  class="w-full border rounded-l p-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-              <button type="submit" class="px-4 bg-indigo-600 text-white rounded-r hover:bg-indigo-700">
-                  検索
-              </button>
-          </form>
+		  <!-- 入力欄 -->
+	  <div class="relative flex-1">
+	      <input type="text" name="keyword" value="{{ request('keyword') }}"
+	          placeholder="商品名で検索..."
+	          class="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+			  </div>
+
+			  <!-- 検索ボタン -->
+		 <button type="submit"
+		      class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition flex items-center gap-1">
+		     <svg xmlns="http://www.w3.org/2000/svg" 
+		           class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+		          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+		                d="M21 21l-4.35-4.35m1.35-6.65a7 7 0 11-14 0 7 7 0 0114 0z" />
+		      </svg>
+		      <span>検索</span>
+		  </button>
+ 	 </form>
+
 
           <!-- 商品一覧（カードグリッド） -->
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

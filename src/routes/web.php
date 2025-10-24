@@ -22,7 +22,9 @@ Route::get('/dashboard', function () {
     return redirect()->route('products.index');
 })->middleware(['auth'])->name('dashboard');
 
-Route::resource('products', ProductController::class);
+Route::middleware(['auth'])->group(function () {
+    Route::resource('products', ProductController::class);
+});
 
 Route::get('/items', function () {
     return redirect('/products');
